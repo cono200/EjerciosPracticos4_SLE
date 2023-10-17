@@ -99,31 +99,41 @@ namespace EjerciosPracticos4_SLE
 
             //k) Escriba una serie de instrucciones que determine e imprima el valor más pequeño en t.
 
-            int numeroMenor = 0;
+            int numeroMenor = t[0,0];
             for (int i = 0; i < 2; i++)
             {
                 for (int j = 0; j < 3; j++)
                 {
 
-                    if (i<=0)
+                    if (t[i, j] < numeroMenor)
                     {
-                        numeroMenor = 0;
-                        
-                    }
-                    else if(j<=0)
-                    {
-                        numeroMenor = 0;
+                        numeroMenor = t[i, j];
                     }
 
-                    else if(i>0)
 
 
-                   
                 }
 
             }
 
             Console.WriteLine("EL numero menor es " + numeroMenor);
+
+
+
+
+            //I) Escriba una instrucción Console.WriteLine que muestre los elementos de la primera fila de t. No utilice repetición.
+            Console.WriteLine("Elementos en T: ");
+            Console.WriteLine(t[0, 0] +  + t[0, 1] +  + t[0, 2]);
+
+
+
+            //m) Escriba una instrucción que totalice los elementos de la tercera columna de t. No utilice repetición.
+            int sumarColumna = t[0, 2] + t[1, 2];
+            Console.WriteLine("La suma es  " + sumarColumna);
+
+            //n) Escriba una serie de instrucciones para imprimir el contenido de t en formato tabular. Enliste los índices de columna como encabezados a lo largo de la parte superior, y enliste los índices de fila a la izquierda de cada fila.
+
+
 
         }
 
